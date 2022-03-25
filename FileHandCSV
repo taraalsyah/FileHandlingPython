@@ -1,0 +1,11 @@
+file_bio = open("biodata.csv", "r+")
+teks = file_bio.readlines()
+
+nama = input("Nama: ")
+umur = input("Umur: ")
+alamat = input("Alamat: ")
+
+teks = (f'{nama},{umur},{alamat}\n')
+str(teks)
+file_bio.write(teks)
+file_bio.close()
